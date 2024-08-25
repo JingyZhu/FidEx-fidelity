@@ -1,0 +1,13 @@
+node_modules/
+chrome_data/
+__pycache__/
+*/downloads/
+*.json
+*.png
+*.jpg
+*.html
+*.warc
+*.log
+*.npy
+*.csv
+!package.json
