@@ -59,9 +59,9 @@ Options:
     wb-manager add <col> <recorded_warc_file>
     ```
 
-- Replay the page with pywb (```replay.py```)
+- Replay the page with pywb (```replay.js```)
     ```bash
-    python replay.py [flags] <url>
+    node replay.js [flags] <url>
     ```
 
 
