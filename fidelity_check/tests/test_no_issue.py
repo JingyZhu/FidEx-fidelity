@@ -10,7 +10,7 @@ from utils import url_utils
 from record_replay import autorecord
 
 TESTDIR = 'test_data'
-# Need to change to where the pywb is running on and the archive is stored
+# TODO: Need to change to where the pywb is running on and the archive is stored
 ARCHIVEDIR = os.path.join(os.path.expanduser("~"), 'fidelity-files')
 PYWBVENV = '/x/jingyz/pywb/env/bin/activate'
 

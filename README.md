@@ -6,6 +6,7 @@
 To setup the environment, mainly need to prepare for the following:
 - Python packages:
 ```bash
+# Recommend to use virtualenv for running pywb later
 pip install -r requirements.txt
 ```
 
@@ -64,5 +65,15 @@ Options:
     node replay.js [flags] <url>
     ```
 
+- E2E (```autorecord.py```)
+    - To run e2e (record -> add to pywb -> replay), `autorecord.py` can be used.
+    - `autorecord.record_replay` can be used to run the record and replay in one go.
+
+- Interaction
+    - The interaction related code is in `chrome_ctx/interaction.js`. Both `record.js` and `replay.js` can be run with the `-i` flag to trigger the interaction.
+
 
 ## Fidelity check
+Once the record and replay is done, the layout tree, screenshot, dom and other optional tracked information will be store in a directory (specified with `-d` flag).
+
+To run the fidelity check, run corresponding functions in `fidelity_check` folder, specified with the directory path, and the corresponding prefix (default will be "live" and "archive")
